@@ -24,20 +24,29 @@ tr:nth-child(even) {
 <body>
 <h1>Cue-Preserving Binaural Speech Enhancement with Dual-Path and Polar-Decoupling Network</h1>
 <h3>Aleksej Chinaev, Gerald Enzner</h3>
+<h2>Abstract</h2>
 <div style="max-width:1500px; word-wrap:break-word;">
-	In the following we provide audio samples of <b>15 neural networks</b> that are involved in our evaluation: 
-	<b></b>twelve DNNs for CoGaPha-related ablation study</b> and <b>three external baselines</b> such as BinMap(FCRN), BinConvTasNet and CoGa(CDAE). 
-    The audio samples are available for two datasets "testKiekko" and "testWham" generated for various conditions of ambient noise. 
-    For each dataset, we provide audio samples for different acoustic environments, including a bathroom shower, a church visit, a restaurant, and an office building. 
-	Every audio sample was generated for individual signal-to-noise ratio (SNR), direction of arrival (DOA) and noise type. 
-	The CoGaPha-based ablation models are configured with:
-	<ul>
-  		<li>two system setups, i.e, bilateral (Bil) vs. binaural (Bin)</li>
-  		<li>three regression styles, i.e., mapping (Map) and real-valued spectral gain (Ga) regression vs. the gain-phase (GaPha) regression in our proposed CoGaPha system</li>
-  		<li>two ''inner'' architectures,i.e, complex convolutional recurrent (cCRN) vs.\ the proposed dual-path time-frequency cCRN (DPcCRN) model.</li>
-	</ul>
+Binaural speech enhancement faces a fundamental trade-off between achieving effective noise reduction and preserving the spatial-cues of the acoustic scene. 
+Since a constraining of binaural denoising to the preservation of binaural cues for speech and noise contributes to a natural and spatially faithful sound perception, even in challenging acoustic environments, this paper proposes a novel common-gain and -phase (CoGaPha) network for lightweight, causal, STFT-based, phase-sensitive and cue-preserving denoising. 
+The CoGaPha network combines fresh ingredients of the modern speech technology, such as dual-path time-frequency processing using recurrent Mamba architectures and magnitude-phase (polar) decoupling with separate CoGaPha decoders for spectral gain and phase. 
+An experimental evaluation on various binaural datasets with a rich variety of noise types reveals the benefits of the proposed denoising in terms of intelligibility, signal quality and noise reduction. 
+Further, a framework for evaluating the ability of considered networks to generalize for noise types unseen in training is reported. 
+Compared to both internal ablations and external baselines, the proposed CoGaPha network demonstrates excellent denoising capabilities and small generalization gap, including the hearing-aid application.
 </div>
 <h2>Audio samples</h2>
+<div style="max-width:1500px; word-wrap:break-word;">
+	In the following, we provide binaural output signals of <b>15 neural networks</b> that are involved in evaluation of the proposed <b>CoGaPha system</b>. 
+	The audio samples are available for two datasets <b>"testKiekko" and "testWham"</b> generated for various conditions of ambient noise including a bathroom shower, a church visit, a restaurant, and an office building and much more noise types. 
+	The materials demonstrate denosing performance of the considered systems in order to support personal listening experience.  
+	The audio samples are denoised outputs of <b>twelve DNNs for CoGaPha-related ablation study</b> and <b>three external baselines</b> such as BinMap(FCRN), BinConvTasNet and CoGa(CDAE). 
+	Every audio sample was generated for individual noise type, signal-to-noise ratio (SNR) and direction of arrival (DOA). 
+	<br><br> <b>Ablation models</b> are configured with:
+	<ul>
+  		<li><b>two system setups</b>, i.e, bilateral (Bil) vs. binaural (Bin)</li>
+  		<li><b>three regression styles</b>, i.e., mapping (Map) and real-valued spectral gain (Ga) regression vs. the gain-phase (GaPha) regression in our proposed CoGaPha system</li>
+  		<li><b>two ''inner'' architectures</b>,i.e, complex convolutional recurrent (cCRN) vs.\ the proposed dual-path time-frequency cCRN (DPcCRN) model.</li>
+	</ul>
+</div>
 
 <table>
   <tr>
