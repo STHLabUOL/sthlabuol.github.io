@@ -36,15 +36,15 @@ Compared to both internal ablations and external baselines, the proposed CoGaPha
 <h2>Audio samples</h2>
 <div style="max-width:1500px; word-wrap:break-word;">
 	In the following, we provide binaural output signals of <b>15 neural networks</b> that are involved in evaluation of the proposed <b>CoGaPha system</b>. 
-	The audio samples are available for two datasets <b>"testKiekko" and "testWham"</b> generated for various conditions of ambient noise including a bathroom shower, a church visit, a restaurant, and an office building and much more noise types. 
+	The audio samples are available for two datasets <b>"testKiekko"</b> and <b>"testWham"</b> (the networks beeing optimized on <b>"trainKiekko"</b> data) generated for various conditions of ambient noise including a bathroom shower, a church visit, a restaurant, and an office building and many more noise types. 
 	The materials demonstrate denosing performance of the considered systems in order to support personal listening experience.  
 	The audio samples are denoised outputs of <b>twelve DNNs for CoGaPha-related ablation study</b> and <b>three external baselines</b> such as BinMap(FCRN), BinConvTasNet and CoGa(CDAE). 
 	Every audio sample was generated for individual noise type, signal-to-noise ratio (SNR) and direction of arrival (DOA). 
 	<br><br> <b>Ablation models</b> are configured with:
 	<ul>
-  		<li><b>two system setups</b>, i.e, bilateral (Bil) vs. binaural (Bin)</li>
-  		<li><b>three regression styles</b>, i.e., mapping (Map) and real-valued spectral gain (Ga) regression vs. the gain-phase (GaPha) regression in our proposed CoGaPha system</li>
-  		<li><b>two ''inner'' architectures</b>,i.e, complex convolutional recurrent (cCRN) vs.\ the proposed dual-path time-frequency cCRN (DPcCRN) model.</li>
+  		<li><b>two system setups</b>, i.e, bilateral (Bil) vs. binaural (Bin),</li>
+  		<li><b>three regression styles</b>, i.e., mapping (Map) and real-valued spectral gain (Ga) regression vs. the gain-phase (GaPha) regression in our proposed CoGaPha system,</li>
+  		<li><b>two ''inner'' architectures</b>,i.e, complex convolutional recurrent (cCRN) vs. the proposed dual-path time-frequency cCRN (DPcCRN) model.</li>
 	</ul>
 </div>
 
